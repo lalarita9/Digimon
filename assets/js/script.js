@@ -75,4 +75,61 @@ fetch(url)
         document.getElementById("digimon-champion").innerHTML = listaChampion;
 }
 })
+//Obtener listado de Digimon nivel "Ultimate"
+fetch(url)
+.then(response => response.json())
+.then(datos => {
+    
+    for (item of datos){
+
+        let levelUltimate = datos.filter(function(item) {
+            return item.level === "Ultimate";
+        });
+        var listaUltimate = "";
+        levelUltimate.forEach(function(item) {
+            listaUltimate += `<li>
+            ${item.name}
+            </li>`;
+        });
+        document.getElementById("digimon-ultimate").innerHTML = listaUltimate;
+}
+})
+//Obtener listado de Digimon nivel "Mega"
+fetch(url)
+.then(response => response.json())
+.then(datos => {
+    
+    for (item of datos){
+
+        let levelMega = datos.filter(function(item) {
+            return item.level === "Mega";
+        });
+        var listaMega = "";
+        levelMega.forEach(function(item) {
+            listaMega += `<li>
+            ${item.name}
+            </li>`;
+        });
+        document.getElementById("digimon-mega").innerHTML = listaMega;
+}
+})
+//Obtener listado de Digimon nivel "Amor"
+fetch(url)
+.then(response => response.json())
+.then(datos => {
+    
+    for (item of datos){
+
+        let levelArmor = datos.filter(function(item) {
+            return item.level === "Armor";
+        });
+        var listaArmor = "";
+        levelArmor.forEach(function(item) {
+            listaArmor += `<li>
+            ${item.name}
+            </li>`;
+        });
+        document.getElementById("digimon-armor").innerHTML = listaArmor;
+}
+})
             
