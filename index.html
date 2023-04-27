@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384- UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Título de Página-->
@@ -21,10 +23,10 @@
     <!--Cabecera-->
     <header class="header">
         <!--Menú-->
-        <nav class="navbar navbar-expand-lg navbar-info">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="assets/img/logo_digimon.png" alt="" width="50" height="30">
+                <img src="assets/img/logo_digimon.png" alt="" width="80" height="60">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +37,17 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Frases Digimon</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="#">Evolución Digimon</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slayer
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Ranking</a></li>
+                      <li><a class="dropdown-item" href="#">Frases en Digimon</a></li>
+                      <li><a class="dropdown-item" href="#">Video Musical</a></li>
+                    </ul>
                   </li>
                   
                 </ul>
@@ -47,9 +56,206 @@
           </nav> 
     </header>
     <!--Cuerpo-->
-    <main class="container">
-       
-
+    <main class="container-fluid row row col-7 col-5">
+        <!--Central-->
+        <div class="main_cuerpo col">
+        <!--Digimon Fresh-->    
+        <div class="digimon_fresh mb-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Digimon Fresh, también conocido como Digimon Bebé I
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-fresh">
+                           
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Digimon In-Training-->    
+        <div class="digimon_in_traning">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Digimon In-Training, Digimon Bebé II en entranamiento, nivel básico.
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-training">
+                            
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Digimon Rookie-->    
+        <div class="digimon_rookie">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTres">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                      Digimon Rookie, Digimon niño, nivel principiante.
+                    </button>
+                  </h2>
+                  <div id="collapseTres" class="accordion-collapse collapse" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-rookie">
+                           
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>   
+        </div>
+        <!--Digimon Champion-->    
+        <div class="digimon_champion">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCuatro">
+                    <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+                      Digimon Champion, adulto digimon, es una de las evoluciones más poderosas.
+                    </button>
+                  </h2>
+                  <div id="collapseCuatro" class="accordion-collapse collapse" aria-labelledby="headingCuatro" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-champion">
+                            
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Digimon Ultimate-->    
+        <div class="digimon_ultimate">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCinco">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                      Digimon Ultimate, conocida como evolución perfecta, solo unos pocos lo logran.
+                    </button>
+                  </h2>
+                  <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingCinco" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-ultimate">
+                            
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Digimon Mega-->    
+        <div class="digimon_mega">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeis">
+                    <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                      Digimon Mega, Digimon muy poderoso, es la última y mayor evolución.
+                    </button>
+                  </h2>
+                  <div id="collapseSeis" class="accordion-collapse collapse" aria-labelledby="headingSeis" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-mega">
+                            
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Digimon Amor-->    
+        <div class="digimon_amor">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSiete">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">
+                      Digimon Amor, Armadura Digimon está a nivel Champion
+                    </button>
+                  </h2>
+                  <div id="collapseSiete" class="accordion-collapse collapse" aria-labelledby="headingSiete" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul id="digimon-amor">
+                            
+                          </ul> </div>
+                  </div>
+                </div>
+            </di>
+        </div>
+        <!--Entretención-->    
+        <div class="entretención">
+            <h3>Juguemos</h3>
+        </div>
+        
+        <!--Lateral-->
+        <div class="main_lateral" class="col">
+        <!--Ranking-->    
+        <div class="lateral_ranking">
+            <h3>Los 15 mejores Digimon</h3>
+            <ul>
+                <li>Garomoton</li>
+            </ul>
+        </div>
+        <!--Frases Gatomon-->    
+        <div class="lateral_frases">
+            <h3>Frases en Digimon</h3>
+            <figure>
+                <blockquote class="blockquote">
+                  <p>Todos van por caminos diferentes, pero se dirigen al mismo destino, aunque cualquiera de esos caminos pueda tener mas espinas que otros. </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Gatomon en <cite title="Source Title">Aventure Digimon I</cite>
+                </figcaption>
+              </figure>
+              <figure>
+                <blockquote class="blockquote">
+                  <p>Así es, he llegado lejos porque siempre he creido en ello.
+                    ¡La esperanza y los sueños siempre existirán...mientras creas en ellos!</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Gatomon en <cite title="Source Title">Aventure Digimon I</cite>
+                </figcaption>
+              </figure>
+              <figure>
+                <blockquote class="blockquote">
+                  <p>La vida es un gran entrenamiento. Así que nunca perdáis el ánimo.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Pixemon en <cite title="Source Title">Aventure Digimon I</cite>
+                </figcaption>
+              </figure>
+              <figure>
+                <blockquote class="blockquote">
+                  <p>Cuando se vive demasiado tiempo en soledad, tu corazón se vuelve frío.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Gatomon en <cite title="Source Title">Aventure Digimon I</cite>
+                </figcaption>
+              </figure>
+              <figure>
+                <blockquote class="blockquote">
+                  <p>La vida no es buena ni mala, es simplemente maravillosa.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  TK en <cite title="Source Title">Aventure Digimon I</cite>
+                </figcaption>
+              </figure>
+        </div>
+        <!--Vídeo-->    
+        <div class="lateral_video">
+        </div>
+        <h3>
+            Haz click para reproducir el vídeo
+        </h3>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe> 
+        </div>
+        
 
     </main>
     <!--Pie de Página-->
