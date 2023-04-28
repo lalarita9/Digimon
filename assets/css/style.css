@@ -1,3 +1,12 @@
 body{
-    background: url(../img/fondo_xl_lg_md.jpg);
+    background: url(../img/fondo_2.jpg);
+    background-size: cover;
+    
+}
+.main_mas_titulo {
+    font-family: 'Sigmar', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #004173;
+    font-style: bold;
 }
