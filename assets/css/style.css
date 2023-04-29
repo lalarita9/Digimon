@@ -1,12 +1,58 @@
+/*Imagen de Fondo para la página*/
 body{
     background: url(../img/fondo_2.jpg);
+    background-size: cover; 
+}
+/*Estilo para el color de fondo de Card por nivel Digimon */
+.bg_fresh {
+    background: #c7c8ca;
+}
+.bg_intraining {
+    background: #92c5fc;
+}
+.bg_rookie {
+    background: #461c71;
+}
+.bg_champion {
+    background: #ffff56;
+}
+.bg_ultimate {
+    background: #df002c;
+}
+.bg_mega {
+    background: #373737;
+    transition: background-color .5s;
+}
+.bg_armor {
+    background: #fdab9f;
+}
+/*Imagen de fondo para el área de Entretención */
+.entretencion{
+    background: url(../img/fondo_entretencion.png);
     background-size: cover;
+}
+/*Color de fondo Card sesión de Entretención*/
+.b_color {
+background: hsl(29, 87%, 62%, 0.8);
+}
+.f-color {
+    color: #212624;
+    font: bold;
     
 }
-.main_mas_titulo {
-    font-family: 'Sigmar', cursive;
-    font-size: 60px;
-    text-align: center;
-    color: #004173;
-    font-style: bold;
-}
+#cardNormal {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+/*Se usa el efecto hover para las Card Digimon Evolución*/
+  #cardNormal:hover  {
+    background: #fc4b08;
+  }
+  
+  
+ 
+  
+ 
+  
+ 

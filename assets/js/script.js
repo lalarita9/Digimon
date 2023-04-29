@@ -13,7 +13,7 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaFresh = "";
         levelFresh.forEach(function(item) {
-            listaFresh += `<div class="card col" style="width: 15rem;">
+            listaFresh += `<div class="card bg_fresh col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
             <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
@@ -35,8 +35,8 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaTraining = "";
         levelTraining.forEach(function(item) {
-            listaTraining += `<div class="card col" style="width: 15rem;">
-            <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
+            listaTraining += `<div class="card bg_intraining col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
+            <img src="${item.img}" class="card-img-top img_ho" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
             <p class="card-text"><b>LEVEL:</b> ${item.level}</p></div></div>`;
@@ -57,8 +57,8 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaRookie = "";
         levelRookie.forEach(function(item) {
-            listaRookie += `<div class="card col" style="width: 15rem;">
-            <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
+            listaRookie += `<div class="card bg_rookie col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
+            <img src="${item.img}" class="card-img-top img_ho" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
             <p class="card-text"><b>LEVEL:</b> ${item.level}</p></div></div>`;
@@ -79,8 +79,8 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaChampion = "";
         levelChampion.forEach(function(item) {
-            listaChampion += `<div class="card col" style="width: 15rem;">
-            <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
+            listaChampion += `<div class="card bg_champion col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal"  >
+            <img src="${item.img}" class="card-img-top img_ho" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
             <p class="card-text"><b>LEVEL:</b> ${item.level}</p></div></div>`;
@@ -101,8 +101,8 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaUltimate = "";
         levelUltimate.forEach(function(item) {
-            listaUltimate += `<div class="card col" style="width: 15rem;">
-            <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
+            listaUltimate += `<div class="card bg_ultimate col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
+            <img src="${item.img}" class="card-img-top img_ho" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
             <p class="card-text"><b>LEVEL:</b> ${item.level}</p></div></div>`;
@@ -123,7 +123,7 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaMega = "";
         levelMega.forEach(function(item) {
-            listaMega += `<div class="card col" style="width: 15rem;">
+            listaMega += `<div class="card bg_mega text-light col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
             <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
@@ -145,7 +145,7 @@ fetch(url)
         //Resultado se muestra en formato Card de Boostrap en HTML//
         var listaArmor = "";
         levelArmor.forEach(function(item) {
-            listaArmor += `<div class="card col" style="width: 15rem;">
+            listaArmor += `<div class="card bg_armor col col-xl-4 col-lg-4 col-md-3 col-sm-12 mx-3 mb-5" style="width: 15rem;" id="cardNormal">
             <img src="${item.img}" class="card-img-top" style="height:100px;" alt="imagen digimon">
             <div class="card-body"><h6 class="card-title"><b>NOMBRE:</b> ${item.name}</h6>
             <hr color="#b2b2a2"></hr>
@@ -177,57 +177,50 @@ var botonEvol = document.querySelector('#btn-go');
                 imagen.src = "assets/img/angemon.png";  
                 return;
             }
-            if (imagen.getAttribute("src") == "assets/img/angemon.png") {
-        
-                imagen.src = "assets/img/hodyangemon.png";  
+            else {        
+                imagen.src = "assets/img/holyangemon.png";  
                 return;
             }
-             else {
-        
-                imagen.src = "assets/img/poyomon.png";
+                    
         
             }
-            return;        
-        
-            }
-
-            var botonRespuesta = document.querySelector('#btn-repuesta');
-            botonRespuesta.addEventListener('click', verificar);       
+//Función para responder De quién es la silueta
+var botonRespuesta = document.querySelector('#btn-repuesta');
+botonRespuesta.addEventListener('click', verificar);       
 function verificar(){
-
 
 if(document.getElementById("flexRadioDefault1").checked) {
   
-  alert("Nunca volveré a insultar a nadie \n ¡Oh, mira un tarado!");
+  alert("✘ \n Nunca volveré a insultar a nadie \n （っ＾▿＾)☞ ¡Oh, mira un tarado!");
   return;
 }
 if(document.getElementById("flexRadioDefault2").checked) {
   
-    alert("No, blublublu, soy la estrella de otro anime");
+    alert("✘ \n No, glugluglu, soy la estrella de otro anime");
     return;
   
 } 
 if(document.getElementById("flexRadioDefault3").checked) {
   
-    alert("Que bruto pongale 0");
+    alert("✘ \n Que bruto pongale 0 ☜(ˆ▿ˆc)");
     return;
   }
   if(document.getElementById("flexRadioDefault4").checked) {
     var mono = document.getElementById('sil-betamon');
-        
-    if (mono.getAttribute("src") == "assets/img/silueta-betamon.png") {
-
-        mono.src = "assets/img/betamon_color.png";
-        
     
-  
-    alert("Respuesta Correcta");
-    return;
-    }
-
+    if (mono.getAttribute("src") == "assets/img/silueta-betamon.png") {
+        mono.src = "assets/img/betamon_color.png";
+        alert("✔ Respuesta Correcta \n (👍≖‿‿≖)👍 👍(≖‿‿≖👍)");  
+      
+    } 
+    return
   }
-  
+    
+  else {
+    alert ("Debes elgir una opción")
+  }
 }
+
 
 
 
