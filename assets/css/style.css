@@ -49,6 +49,13 @@ background: hsl(29, 87%, 62%, 0.8);
   #cardNormal:hover  {
     background: #fc4b08;
   }
+
+  #gatomon3 {
+    transition: opacity 0.5s;
+    display: block;
+    
+  }
+  
   
   
  

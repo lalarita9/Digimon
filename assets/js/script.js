@@ -178,12 +178,13 @@ var botonEvol = document.querySelector('#btn-go');
                 return;
             }
             else {        
-                imagen.src = "assets/img/holyangemon.png";  
+                imagen.src = "assets/img/holyangemon.png"; 
+                botonEvol.innerHTML = "DigiEvolución OK" 
                 return;
             }
                     
-        
             }
+            
 //Función para responder De quién es la silueta
 var botonRespuesta = document.querySelector('#btn-repuesta');
 botonRespuesta.addEventListener('click', verificar);       
@@ -220,6 +221,17 @@ if(document.getElementById("flexRadioDefault3").checked) {
     alert ("Debes elgir una opción")
   }
 }
+//Uso de JQuery para hacer desaparecer imagen//
+$(document).ready(function() {
+    $('#gatomon3').on('mouseenter', function() {
+      $(this).css('opacity', '0');
+    });
+  
+    $('#gatomon3').on('mouseleave', function() {
+      $(this).removeAttr('style');
+    });
+  });
+
 
 
 
